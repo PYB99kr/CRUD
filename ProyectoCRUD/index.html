@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de Contactos</title>
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="custom_styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="center-align">Agenda de Contactos</h2>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Agregar Contacto</span>
+            <div class="input-field">
+              <input id="nombre" type="text" class="validate">
+              <label for="nombre">Nombre</label>
+            </div>
+            <div class="input-field">
+              <input id="telefono" type="tel" class="validate">
+              <label for="telefono">Teléfono</label>
+            </div>
+            <div class="input-field">
+              <input id="email" type="email" class="validate">
+              <label for="email">Correo Electrónico</label>
+            </div>
+            <div class="input-field">
+              <textarea id="notas" class="materialize-textarea"></textarea>
+              <label for="notas">Notas</label>
+            </div>
+            <button class="btn waves-effect waves-light btn-submit" type="submit" name="action">Enviar
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Lista de Contactos</span>
+            <table class="highlight white-text horizontal-table" id="contact-table">
+              <thead>
+                <tr>
+                  <th class="col-nombre">Nombre</th>
+                  <th class="col-telefono">Teléfono</th>
+                  <th class="col-email">Correo Electrónico</th>
+                  <th class="col-notas">Notas</th>
+                  <th class="col-acciones">Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Aquí se mostrarán los contactos -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
